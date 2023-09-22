@@ -1,3 +1,5 @@
+# https://stackoverflow.com/questions/36483334/make-crc-on-stm32-match-with-software-implementation
+
 custom_crc_table = {}
 def generate_crc32_table(_poly):
 
@@ -64,10 +66,6 @@ generate_crc32_table(poly)
 crc_stm = crc32_stm(bytearray(array))
 
 print(hex(crc_stm))
-
-
-
-
 
 
 
